@@ -1,0 +1,281 @@
+:root{
+  --main-color:#ff6e61;
+  --section:#f1f3f4;
+  --final-sec:#11151d;
+}
+/* start costum propearty */
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit !important;
+  
+}
+.main-btn {
+  background-color:var(--main-color) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: .7s;
+}
+.main-btn:hover {
+ border: none;
+ opacity: .9;
+}
+.titles::before{
+content: '';
+position: absolute;
+width: 45px;
+height: 2px;
+background: rgba(0, 0, 0, 0.507);
+bottom: -10px;
+
+}
+section{
+  padding: 5rem 0;
+}
+/* end costum propearty */
+
+/* start nav */
+nav .icons i{
+  cursor: pointer;
+}
+.boxsearch{
+  position: absolute;
+  height: calc(100vh);
+  width: 100%;
+  right: 0;
+  top: -10px;
+  z-index: 9999;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-color: #282f35b2 ;
+ }
+ 
+ .boxsearch input{
+  outline: none;
+  border: none;
+  border-style:  solid none  solid solid  ;
+  border-width: 2px ;
+  border-color:#e7e8e9;
+  height:80px;
+  width: 280px;
+  background: none;
+  opacity: .5;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+ }
+ .boxsearch input:focus{
+  border-color: #eee;
+ }
+
+ .boxsearch input:focus::placeholder{
+  visibility: hidden;
+ }
+
+ ::placeholder{     
+   
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  opacity: 1; 
+  text-align: center;
+
+}
+
+      
+ .boxsearch .close-icon{
+  outline: none;
+  position: absolute;
+  top: 50px;
+  right: 110px;
+  border: none;
+  font-size: 50px;
+  color: #e7e8e9;   
+  padding: 10px;
+  background:none;
+  opacity: .8;
+
+ }
+ .boxsearch .search-icon{
+  outline: none;
+  color: #fff;   
+  border-color: #e7e8e9;
+  border-style:  solid solid solid none ;
+  border-width: 2px;
+  height:80px;
+  width: 100px;
+  font-size: 30px;
+  background-color: #13131421   ;
+  
+ }
+
+/* end nav */
+/* start main */
+main{
+  background-color:#f1f3f4;
+  background-image: url(../img/main/hero-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+main .main-title{
+  left: 15%;
+}
+main .main-title span{
+  letter-spacing: 3px;
+}
+main .main-title p{
+  width: 35%;
+}
+@media (max-width:768px){
+  main .main-title p{
+      width: 100%;
+    }  
+
+  }
+
+  
+/* end main */
+/* start collection */
+.collection h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.collection .main-btn{
+  color: black !important;
+  border: solid 1px black !important;
+  border-radius:  0 !important;
+  background: none !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.collection .a:hover{
+  background-color: rgba(255, 255, 0, 0.26) !important;
+ }
+ .collection .b:hover{
+  background-color: rgba(175, 159, 190, 0.719) !important;
+ }
+ .collection .c:hover{
+  background-color:rgba(160, 155, 165, 0.747) !important;
+ }
+/* end collection */
+/* start bestSeller */
+.bestseller .active {
+  background-color:var(--main-color) !important;
+  color: white !important;
+  border: none !important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: .7s;
+}
+.bestseller ul li:hover{
+  background-color: var(--main-color);
+  color: white;
+  transition: .7s;
+}
+.bestseller .span{
+  z-index: 1;
+  width: fit-content;
+}
+.bestseller img{
+  transition: .6s;
+ }
+ .bestseller .card{
+  overflow: hidden;
+ }
+.bestseller .card:hover img{
+ transform: scale(110%) rotate(5deg);
+ 
+}
+.seller-info{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bestseller .seller-info span:first-child{
+  font-size: 14px;
+}
+.bestseller .seller-info span:last-child{
+  font-size: 14px;
+  color: #ff6e61;
+  font-weight: bold;
+}
+/* end bestSeller */
+/* start sales */
+.sales .sales-info{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: fit-content;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-100% , -50%);
+}
+/* end sales */
+/* start new */
+.new .trend{
+  font-size: 15px !important;
+  font-family: cursive;
+  top:10%;
+}
+.new .explore{
+  font-family: cursive;
+  border: none !important;
+  /* border-bottom: solid 1px white !important; */
+  border-radius: 0;
+  bottom:10%;
+  left:35%;
+}
+.new .explore::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  transform: translate(-85% , 50%);
+  background-color: #fff;
+  }
+  .new .explore:hover::after{
+    width: 100%;
+    transition: .6s ease-out;
+    }
+
+
+
+/* start new */
+/* start galary */
+.galary img{
+  width:162px;
+}
+
+/* end galary */
+/* start footer */
+footer{
+  background-color:var(--section);
+}
+.fa-facebook{
+  color: #1877f2;
+  
+}
+.fa-twitter{
+  color:#1da1f2;
+}
+.fa-pinterest{
+  color:#bd081c;
+}
+.fa-linkedin{
+  color: #0a66c2;
+}
+footer .final{
+  background-color: var(--final-sec);
+}
+footer .tit i{
+  color: var(--main-color);
+}
+.final i{
+  border: solid 2px white !important;
+  cursor: pointer;
+}
+/* end footer */
